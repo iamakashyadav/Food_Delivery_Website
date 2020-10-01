@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" media="screen and (max-width: 1250px)" href="css/phone.css">
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -40,7 +41,7 @@
     </div>
     <h1 id="scroll_services">Our Services</h1>
     <div id="services">
-        <div class="box">
+        <div class="box" data-aos="fade-left">
             <img src="img/1.png" alt="">
             <h2>Food Catering</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis dolorum quia expedita delectus fuga
@@ -52,7 +53,7 @@
                 maiores unde quia alias sed enim culpa optio perspiciatis similique officiis possimus quod magnam
                 voluptas recusandae itaque.</p>
         </div>
-        <div class="box">
+        <div class="box" data-aos="fade-down">
             <img src="img/2.png" alt="">
             <h2>Bulk Ordering</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis dolorum quia expedita delectus fuga
@@ -64,7 +65,7 @@
                 accusantium dolorem impedit explicabo nulla at! Pariatur alias harum, nisi distinctio ad provident id
                 praesentium vel tempore! Accusantium.</p>
         </div>
-        <div class="box">
+        <div class="box" data-aos="fade-right">
             <img src="img/3.png" alt="">
             <h2>Food Ordering</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis dolorum quia expedita delectus fuga
@@ -118,7 +119,13 @@
             Copyright © www.bhojan.com. All rights reserved!
         </div>
     </footer>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 180,
+            duration: 1500
+        });
+    </script>
 </body>
 
 </html>
